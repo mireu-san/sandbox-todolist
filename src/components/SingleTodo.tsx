@@ -30,7 +30,7 @@ const SingleTodo = ({todo, todos, setTodos}: Props) => {
   // const handleEdit = (id: number) =>
 
   const handleDelete = (id: number) => {
-    setTodos(todos.filter((todo) => todo.id !== todo.id))
+    setTodos(todos.filter((todo) => todo.id !== id))
   }
 
   const handleEdit = (e: React.FormEvent, id:number) => {
