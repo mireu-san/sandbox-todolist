@@ -50,3 +50,42 @@
     width: 90%;
     flex-wrap: wrap;
 }
+
+.todos__single {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url("https://images.unsplash.com/photo-1615457938971-3ab61c1c0d57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80");
+    transition: 0.2s;
+  }
+
+  .todos__single--text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+  }
+
+  .todos__single--text:focus {
+    outline: none;
+  }
+
+@media (max-widwth: 700px) {
+    .input {
+        width: 95%;
+    }
+    .todos {
+        width: 95%;
+    }
+    .todos__single {
+        width: 100%;
+    }
+}
+
+
+@media (max-widwth: 1200px) {
+    .todos_single {
+        width: 40%;
+    }
+}
